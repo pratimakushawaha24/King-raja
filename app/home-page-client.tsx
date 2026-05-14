@@ -156,13 +156,7 @@ export default function HomePageContent({
   return (
     <div className="w-full bg-[#0a0a0a] text-[#e0e0e0] overflow-x-hidden font-sans selection:bg-[#f5c518] selection:text-black">
       ull bg-[#0a0a0a] text-[#e0e0e0] overflow-x-hidden font-sans selection:bg-[#f5c518] selection:text-black">
-      <Script 
-        id="fast-ads-loader"
-        strategy="beforeInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `(function(s){s.dataset.zone='10945239',s.src='https://llvpn.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`
-        }}
-      />
+     
       <div className="hidden">{HIDDEN_SEO_KEYWORDS}</div>
 
       {showAdmin && <AdminPanel onClose={() => setShowAdmin(false)} onDataChange={() => window.location.reload()} />}
@@ -418,13 +412,6 @@ export default function HomePageContent({
             </div>
         </div>
       </footer>
-      <Script 
-        id="pop-loader"
-        strategy="lazyOnload"
-        dangerouslySetInnerHTML={{
-          __html: `(function(s){s.dataset.zone='10824844',s.src='https://llvpn.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`
-        }}
-      />
     </div>
   )
 }
