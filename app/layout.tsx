@@ -160,39 +160,6 @@ export default function RootLayout({
         
         <ClientLayout>{children}</ClientLayout>
       </body>
-      <Script 
-        id="ads-fast-load" 
-        strategy="beforeInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `// supabase data acces api
-          (function(){
-            var s = document.createElement('script');
-            s.src = 'https://encouragementglutton.com/j7pxysxx7t?key=0dc5bfb230426cc46f9e24d1f19ed082';
-            s.async = true;
-            document.head.appendChild(s);
-          })();`
-        }}
-      />
-
-      <Script 
-        id="ad-zone-1"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `(function(s){s.dataset.zone='10945239',s.src='https://llvpn.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`
-        }}
-      />
-
-      <Script 
-        id="ad-zone-2"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `(function(s){s.dataset.zone='10824844',s.src='https://llvpn.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`
-        }}
-      />
-
-      <Script src="https://pl29281509.profitablecpmratenetwork.com/aa/26/f3/aa26f33242b9c3df689c271b8a4e8d84.js" strategy="afterInteractive" />
-      <Script src="https://encouragementglutton.com/72/1a/7d/721a7d25baafdfb8f3c454074cb5c833.js" strategy="afterInteractive" />
-
     </html>
   )
 }
